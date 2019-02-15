@@ -4,6 +4,21 @@ Electrical Grid Stability Simulated Data Modeling and Analysis
 
 Data Set Information : [Electrical Grid Stability Simulated Data](https://archive.ics.uci.edu/ml/datasets/Electrical+Grid+Stability+Simulated+Data+)
 
+Ce dataset permet l'analyse de la stabilité locale d’un système en étoile à 4 nœuds (le producteur d'électricité est au centre) mettant en œuvre le concept de contrôle de réseau intelligent décentralisé (Decentral Smart Grid Control).
+
+11 attributs prédictifs, 1 non prédictif (p1), 2 champs d’objectif :
+  tau[x] : temps de réaction du participant (réel dans l'intervalle [0.5 ;10] s).
+ 	   Tau1 - la valeur pour le producteur d'électricité.
+  p[x] : puissance nominale consommée (négative) / produite (positive) (réelle).
+	   Pour les consommateurs de la plage [-0,5 ; -2] s ^ -2;
+	   p1 = abs (p2 + p3 + p4)
+  g[x] : coefficient (gamma) proportionnel à l'élasticité des prix (réel de l'intervalle [0.05 ; 1] s ^ -1).
+	   g1 = la valeur pour le producteur d'électricité.
+  Stab : la partie réelle maximale de la racine de l’équation caractéristique (si positive - le système est linéairement instable) (réel)
+  Stabf : l’étiquette de stabilité du système (catégorique: stable / instable)
+
+Nous avons choisi de faire une classification du champ « Stabf » pour savoir si c’est stable ou instable.
+
 ## Getting Started
 
 These instructions below will get you a copy of the project up and running on your local machine for development and testing purposes.
