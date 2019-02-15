@@ -7,7 +7,7 @@ Data Set Information : [Electrical Grid Stability Simulated Data](https://archiv
 Ce dataset permet l'analyse de la stabilité locale d’un système en étoile à 4 nœuds (le producteur d'électricité est au centre) mettant en œuvre le concept de contrôle de réseau intelligent décentralisé (Decentral Smart Grid Control).
 
 11 attributs prédictifs, 1 non prédictif (p1), 2 champs d’objectif :
-  tau[x] : temps de réaction du participant (réel dans l'intervalle [0.5 ;10] s).
+tau[x] : temps de réaction du participant (réel dans l'intervalle [0.5 ;10] s).
  	   Tau1 - la valeur pour le producteur d'électricité.
   p[x] : puissance nominale consommée (négative) / produite (positive) (réelle).
 	   Pour les consommateurs de la plage [-0,5 ; -2] s ^ -2;
